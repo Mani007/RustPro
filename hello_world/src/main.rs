@@ -1,11 +1,14 @@
 // Functions in Rust
 fn main() {
     println!("Hello, world! Functions in Rust");
-    hello_print(5);
+    let sum:i32 = hello_add(5,14);
+    println!("Sum of the two numbers is {}",sum);
 }
 
 // Function declaration
-fn hello_print(num:i32)  {
+fn hello_add(num1:i32, num2:i32) -> i32 {
     // code block
-    println!("Hello, world! through the functions in Rust with integer as input of {}", num);
+    println!("The functions in Rust with two numbers as input");
+    let results:i32 = num1 + num2;
+    return results;
 }
