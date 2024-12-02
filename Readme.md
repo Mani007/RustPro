@@ -1,6 +1,10 @@
 # A to Z of Rust
 This is a collection of resources for learning the Rust programming language. 
 #### For windows users you need VC++ linker, please install rust from official website.
+### Datatypes in Rust
+Two major data types of rust are scaler types and compund types
+1. Scaler types - such as interger float etc.    
+2. Compond types - such as premitive - arrays and tuples and complex - Strings, vectors etc. 
 
 ## Books and Resources(more updates coming soon):
 ##### [1] Book: The Rust Programming Language (Second Edition)

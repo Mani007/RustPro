@@ -1,6 +1,6 @@
 fn main() {
-    println!("Hello, world!");
-    println!("Rust is awesome!");
-    println!("My first Rust code!!!");
-    println!("My first Rust code from mac!!!");
+    println!("Hello, world! Its integer datatype");
+    let num:u8 = 25;
+    println!("this is num value {}", num)
+    
 }
