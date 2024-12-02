@@ -6,4 +6,7 @@ fn main() {
     let emplyee_name: &str = emp_info_tuple.0;
     let emplyee_age: u16 = emp_info_tuple.1;
     println!("The name of employee is by tuple[0] {} and age is by tuple[1] {}",emplyee_name,emplyee_age);
+    // Destructuring of tuple 
+    let (name,age) = emp_info_tuple;
+    println!("The name of employee is by destructuring {} and age is by destructure {}",name,age);
 }
