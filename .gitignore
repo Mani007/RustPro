@@ -2,3 +2,7 @@ target/
 *.log
 .idea/
 .DS_Store
+**/src/target/
+*/src/target/
+**/src/target
+*/src/target
