@@ -6,6 +6,24 @@ Two major data types of rust are scaler types and compund types
 1. Scaler types - such as interger float etc.    
 2. Compond types - such as premitive - arrays and tuples and complex - Strings, vectors etc. 
 
+### Functions in Rust
+Functions are used to perform specific task. They can be called anywhere in program.
+```rust
+fn main() {
+    println!("Hello World!");
+}
+```
+In above example we have defined function named `main` which prints "Hello World!" on console.
+
+### Variables in Rust
+Variables are containers that store values. In rust variables are immutable by default but they can also be mutable.
+let x = 5; //immutable variable
+println!("{}",x);
+let mut y = 10; //mutable variable
+y += 1;
+println!("{}",y);
+In above example first line
+
 ## Books and Resources(more updates coming soon):
 ##### [1] Book: The Rust Programming Language (Second Edition)
 ##### [2] Rust by Example
