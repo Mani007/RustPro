@@ -5,6 +5,6 @@ fn main() {
         let inside_variable:u8 = 10;
         println!("Inside variable is {}",inside_variable);
         
+        println!("Outside variable is {}",outside_variable); 
     }   
-    println!("Outside variable is {}",outside_variable); 
 }
