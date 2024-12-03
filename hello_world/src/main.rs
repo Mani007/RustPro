@@ -10,6 +10,9 @@ fn main() {
     //let str2:String = srt1.clone();
     println!("{}",srt1);
     println!("{}",str2);
+    /*
+    We are dealing with heap memory here and memory is dynamic so when we assign one variable to another it will not copy the value but rather create a reference of that variable. So if you want to make a deep copy then use clone(). This concept is also known as copy trait. We will see traits in details later. 
+     */
    
 }
 
