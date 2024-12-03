@@ -1,4 +1,5 @@
 // Understanding scope in Rust
+const SCOPE_CONSTANT:i32=4; // Declaring global constant, amke sure all letters are capital for global constants
 fn main() {
     let outside_variable:u8 = 5;
     {
@@ -7,9 +8,9 @@ fn main() {
     }   
     //println!("Inside variable is {}",inside_variable); // this will create an error because the variable has been out of scope 
     println!("Outside variable is {}",outside_variable); 
-    print_out(outside_variable); // this will create scope error
+    print_out(); // this will create scope error
 }
 
-fn print_out(outnum:u8){
-    println!("try to print outside variable {}",outnum)
+fn print_out(){
+    println!("try to print outside variable {}",SCOPE_CONSTANT)
 }
