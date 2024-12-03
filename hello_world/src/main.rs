@@ -6,7 +6,7 @@ fn main() {
 }
 
 // Function declaration
-fn hello_add(num1:i32, num2:i32) -> i32 {
+fn hello_add(num1:i32, num2:i32) -> i32 {  // you must specify the return type in the function if required
     // code block
     println!("The functions in Rust with two numbers as input");
     let results:i32 = num1 + num2;
