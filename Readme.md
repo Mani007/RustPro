@@ -53,6 +53,7 @@ del obj # delete object
 print(obj.data) # Accessing deleted object results in AttributeError
 gc.collect()  # Accessing deleted object results in AttributeError
 ```
+To understand more clearly in terms of python programme about mutablity, think in terms of **inplace modification of objects.** In place modification is onlu possible in rust if the variable is declared as mutable using `mut` keyword and if the memory allocated to it is clearly defined either in stack or in heap. For heap allocation you will need special type of functions or traits to inplace modify the object. Dynamic data type or heap allocated memory always uses pointer references for changing the data inplace. Beacuse its heap allocated **ownership rules** will come into picture and accordingly the program need to written.             
 Above code snippet shows how to properly release memory in Python. We have imported built-in module named gc which stands for garbage collector. Then we have defined class named MyObj having single attribute named data which holds list of integers. Next we instantiated an instance of MyObj class and assigned it to variable name obj. Finally we deleted obj object using del keyword followed by dot operator and finally printed content present inside data attribute of obj object. Since we did not call garbage collector explicitly hence interpreter automatically calls it during program termination phase thus ensuring proper cleanup of unused objects.
 Lets see what happens when we run same thing in Java:
 
