@@ -4,7 +4,7 @@ fn main() {
     {
         let inside_variable:u8 = 10;
         println!("Inside variable is {}",inside_variable);
-        
-        println!("Outside variable is {}",outside_variable); 
     }   
+    println!("Inside variable is {}",inside_variable); // this will create an error because the variable has been out of scope 
+    println!("Outside variable is {}",outside_variable); 
 }
