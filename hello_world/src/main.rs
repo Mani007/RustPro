@@ -7,9 +7,9 @@ fn main() {
     }   
     //println!("Inside variable is {}",inside_variable); // this will create an error because the variable has been out of scope 
     println!("Outside variable is {}",outside_variable); 
-    print_out(); // this will create scope error
+    print_out(outside_variable); // this will create scope error
 }
 
-fn print_out(){
-    println!("try to print outside variable {}",outside_variable)
+fn print_out(outnum:u8){
+    println!("try to print outside variable {}",outnum)
 }
