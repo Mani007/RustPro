@@ -9,7 +9,7 @@ fn main() {
     /*******************/
     let str1: String = String::from("Hello"); // str1 is the pointer owing the value 'hello' or in other terms str1 is the owner of hello
     process_text(str1);  // We are transfering the ownership of str1 to process function
-    println!("The value of str1 is {}", str1) // This line will trrough error as we have transfered the ownership of str1 to the function process_text(str1) hence the error
+   // println!("The value of str1 is {}", str1) // This line will trrough error as we have transfered the ownership of str1 to the function process_text(str1) hence the error
                                               //srt1.push_str(", World!");
     //let str2: String = str1; // str2 is now pinting to str1 or you can say tranfer of ownership is happening. 'hello' is now owned by str2 now
     // This will through the borrow error as we are dealing with heap and dynamic memory using String
