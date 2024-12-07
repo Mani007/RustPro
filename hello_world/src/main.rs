@@ -3,7 +3,7 @@
 fn main() {
     
    let s1:String = get_string(); // s1 gets the ownership from the function call
-   println!("The value os string s1 is {}", s1);
+   println!("The value os string s1 is {}", s1); // s1 is the owner of hello
    let s2:String = String::from("WORLD!!");   
    let s3:String = get_new_string(s2); // s2 ownership transfered to the function get_new_string
    println!("The received string of s3 is {}", s3)

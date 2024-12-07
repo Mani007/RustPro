@@ -1,6 +1,9 @@
 # A to Z of Rust
 This is a collection of resources for learning the Rust programming language. 
 #### For windows users you need VC++ linker, please install rust from official website.
+#### Debugging rust programe is critical skill as it is a system level programming language. So make sure you debugging skill is great. 
+#### for debugging you need to install VS code plugin rust-analyzer, codeLLDB and microsoft C++. Also other register level debugger would be a great choice. 
+![Expert debugging video for rust](https://www.youtube.com/watch?v=TlfGs7ExC0A)
 ### Datatypes in Rust
 Two major data types of rust are scaler types and compund types
 1. Scaler types - such as interger float etc.    
