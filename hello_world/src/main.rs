@@ -22,4 +22,4 @@ fn main() {
 }
 fn process_text(s:String)  {
     println!("The string passed is {}", s)
-}
+}  // Once the value is borrowed here and the function execution is completed then the varivle s passed from the main programe will be dropped from the memory until and unless you have cloned the variable. 
