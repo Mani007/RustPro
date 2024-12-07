@@ -3,6 +3,7 @@ This is a collection of resources for learning the Rust programming language.
 #### For windows users you need VC++ linker, please install rust from official website.
 #### Debugging rust programe is critical skill as it is a system level programming language. So make sure you debugging skill is great. 
 #### for debugging you need to install VS code plugin rust-analyzer, codeLLDB and microsoft C++. Also other register level debugger would be a great choice. Make sure you allow breakpoint everywhere in your VS code settings. 
+#### Use memory-view map extension to view memory map with address of your program. 
 ![Expert debugging video for rust](https://www.youtube.com/watch?v=TlfGs7ExC0A)
 ![Expert debugging video for rust1](https://www.youtube.com/watch?v=ebNMJ5rKRLU)
 ![Expert debugging video for rust2 memory layout](https://www.youtube.com/watch?v=7_o-YRxf_cc)
