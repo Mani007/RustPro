@@ -143,7 +143,14 @@ Note that despite factually being able to distinguish between distinct identitie
 - References must always be valid.
 Multiple mutable reference are allowed, but you need to make sure to syncronize it while writing on it. Please make sure you do not do multiple write operation at once. Multiple read operation is possible and allowed.    
 #### Understanding concept of referencing in rust
-
+Basic refeing in rust. In python you can also say like inplace modification. 
+```rust
+fn main() {
+    let x:i8= 5;
+    let y:&i8 = &x; // y is refereence to value of x and value of x is 5
+    println!("The value of y refering to x is {}", y);
+}
+```
 
 
 ### Control Flow Statements in Rust
