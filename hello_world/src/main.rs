@@ -7,12 +7,12 @@ fn main() {
     //let write1:String = write_with1(&mut s1);
     let write1:&mut String = &mut s1;
     write1.push_str(" world");  // we are pushing value one by one hence no error
-    println!("Value of write1 is {}", write1);
+    //println!("Value of write1 is {}", write1);
     //let write2:&mut String = &mut s1;  // write2 is borrowing s1 for writing purpose
     //let write2:String = write_with2(&mut s1);
     let write2: &mut String = &mut s1;
     write2.push_str(" with code."); // We are pushing one by one these values
-    println!("Value of write2 is {}", write2);
+    //println!("Value of write2 is {}", write2);
     println!("The value of write1 is {} and read2 is {}", write1, write2) // The moment we call both refernce of s1, although we are just reading, the error will occour
 }
 // fn write_with1(s:&mut String) -> String{ // passing the borrowed reference of the string
