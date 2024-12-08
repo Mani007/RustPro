@@ -1,12 +1,13 @@
 // Understanding Ownership in Rust
 
 fn main() {
-    let s1:String = String::from("Hello + ");
-    let read1:&String = &s1;  // read1 is borrowing s1 for reading purpose only
-    println!("Value of read1 is {}", read1);
-    let read2:&String = &s1;  // read2 is borrowing s1 for reading purpose only
-    println!("Value of read2 is {}", read2);
-    println!("The value of read1 is {} and read2 is {}", read1,read2)
+    /*Beacuse of secong mutable borrowing error, you cannot write the value of s1 in this program. */
+    let mut s1:String = String::from("Hello + ");
+    let write1:&mut String = &mut s1;  // write1 is borrowing s1 for writing purpose 
+    println!("Value of write1 is {}", write1);
+    let write2:&mut String = &mut s1;  // write2 is borrowing s1 for writing purpose 
+    println!("Value of write2 is {}", write2);
+    println!("The value of write1 is {} and read2 is {}", write1,write2)
 
 }
 
