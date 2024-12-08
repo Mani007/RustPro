@@ -151,7 +151,9 @@ fn main() {
     println!("The value of y refering to x is {}", y);
 }
 ```
-Referencing is similar to the concept of pointers in C/C++ but not completely the same, please do not mix it up. In rust pointer and references are two completely different concepts. 
+Referencing is similar to the concept of pointers in C/C++ but not completely the same, please do not mix it up. In rust pointer and references are two completely different concepts.   
+### Difference between reference and pointers in rust
+Reference is a wraper around memory address. Unlike pointer which directly hold the memory address, reference holds metadata such as lifetime, mutablity etc along with address of the varable it is pointing. Reference behave similar to pointer, but have additional safety check provided by rust compiler. This is essentiall essence of rust memory safety. Also here rules of ownership, borrow and other benificial memory safety is applied in reference. Rust do have smart pointers, but thats different from concept of reference in rust. ![Check this video for more details](https://www.youtube.com/watch?v=Jcbh07P0jHU)
 
 ### Control Flow Statements in Rust
 ## Books and Resources(more updates coming soon):
