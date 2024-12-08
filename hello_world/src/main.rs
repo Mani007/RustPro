@@ -1,7 +1,10 @@
 // Understanding Ownership in Rust
 fn main() {
-    let x:i8= 50;
-    let y:&i8 = &x; // y is refereence to value of x and value of x is 5
-    println!("TThe value of y referencing address of x hence the value of x is {}", y); // rust will do auto derefereencing with here and hence the value of x. We just make a C systax here with *pointer. Rust is easier without *pointer
-    println!("TThe address of x is at {:p}", &x);
+    let mut x:u8 = 7;
+    x=x+1;
+    let y = &mut x; // y is referencing to value of x
+    *y=*y+1;  // x=9 using dereferencing operator to increment x
+    println!("The value of y ref to x is now {}", y);
+    println!("The value of x is now {}", x);
+
 }
