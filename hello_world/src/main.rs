@@ -8,7 +8,8 @@ fn main() {
     let write1:&mut String = &mut s1;
     write1.push_str(" world");  // we are pushing value one by one hence no error
     //println!("Value of write1 is {}", write1);
-    let mut read2: &mut String = &mut s1;  // write2 is borrowing s1 for writing purpose
+    
+    let mut read2: &mut String = &mut s1;  // read2 code will work with warning
     //let write2:String = write_with2(&mut s1);
     //let write2: &mut String = &mut s1;
     //write2.push_str(" with code."); // We are pushing one by one these values
