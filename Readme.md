@@ -151,7 +151,7 @@ fn main() {
     println!("The value of y refering to x is {}", y);
 }
 ```
-
+Referencing is similar to the concept of pointers in C/C++ but not completely the same, please do not mix it up. In rust pointer and references are two completely different concepts. 
 
 ### Control Flow Statements in Rust
 ## Books and Resources(more updates coming soon):
