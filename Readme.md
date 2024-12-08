@@ -133,7 +133,10 @@ fn main(){
 }
 ```
 Here we have demonstrated basic functionality offered by clone method belonging to Vec<T> trait. As expected output confirms presence of duplicate entries corresponding to identical copies generated independently without interfering with master branch controlled exclusively by sole proprietorship exercised collectively amongst participating stakeholders actively contributing towards overall success story unfolding progressively ahead.
-Note that despite factually being able to distinguish between distinct identities manifested physically represented visually via graphical interface presented interactively displayed visually appealing manner nonetheless technically speaking those differences remain superficial reflecting mere surface level distinctions rather than profound structural variations inherent underneath hidden layers concealing intricate details governing inner workings encapsulated securely beneath opaque veil shielding curious minds yearning unconditionally seeking truth about nature of reality itself.
+Note that despite factually being able to distinguish between distinct identities manifested physically represented visually via graphical interface presented interactively displayed visually appealing manner nonetheless technically speaking those differences remain superficial reflecting mere surface level distinctions rather than profound structural variations inherent underneath hidden layers concealing intricate details governing inner workings encapsulated securely beneath opaque veil shielding curious minds yearning unconditionally seeking truth about nature of reality itself.      
+#### Rules and regulations of passing ownership in Rust
+1. When you borrow for reading the volue operations, its allowed easily.      
+
 
 ### Control Flow Statements in Rust
 ## Books and Resources(more updates coming soon):
