@@ -1,9 +1,9 @@
-// Understanding Ownership in Rust
+// Understanding References in Rust
 fn main() {
-    let s1:String = String::from("HeLLo");
-    let strlen:usize = calculate_len(&s1);
-    println!("The lenght of string {} is {}",s1, strlen);
+    let none_ref= create_str_ref(); // dangling reference as local variable cannot return reference
+
 }
-fn calculate_len(s:&String) -> usize{
-    return (*s).len();  // mannual dereferencing happeing here
+fn create_str_ref() -> &String {
+    let s:String = String::from("HeLLOOO");
+    return &s; // cannot return local variable s reference
 }
