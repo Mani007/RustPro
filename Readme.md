@@ -141,7 +141,7 @@ Note that despite factually being able to distinguish between distinct identitie
 #### Reference rule of rust
 - At any given time, you can have either one mutable reference or any number of immutable references.
 - References must always be valid.
-Multiple mutable reference are allowed, but you need to make sure to syncronize it while writing on it. 
+Multiple mutable reference are allowed, but you need to make sure to syncronize it while writing on it. Please make sure you do not do multiple write operation at once. Multiple read operation is possible and allowed. 
 
 
 ### Control Flow Statements in Rust
