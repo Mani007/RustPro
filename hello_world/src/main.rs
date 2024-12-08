@@ -2,16 +2,16 @@
 
 fn main() {
     /*Beacuse of secong mutable borrowing error, you cannot write the value of s1 in this program. */
-    let mut s1:String = String::from("Hello + ");
-    //let write1:&mut String = &mut s1;  // write1 is borrowing s1 for writing purpose 
+    let mut s1: String = String::from("Hello + ");
+    //let write1:&mut String = &mut s1;  // write1 is borrowing s1 for writing purpose
     //let write1:String = write_with1(&mut s1);
-    let write1= &mut s1;
+    let write1 = &mut s1;
     println!("Value of write1 is {}", write1);
-    //let write2:&mut String = &mut s1;  // write2 is borrowing s1 for writing purpose 
+    //let write2:&mut String = &mut s1;  // write2 is borrowing s1 for writing purpose
     //let write2:String = write_with2(&mut s1);
     let write2 = &mut s1;
     println!("Value of write2 is {}", write2);
-   // println!("The value of write1 is {} and read2 is {}", write1,write2)
+    println!("The value of write1 is {} and read2 is {}", write1, write2) // The moment we call both refernce of s1, although we are just reading, the error will occour
 }
 // fn write_with1(s:&mut String) -> String{ // passing the borrowed reference of the string
 //     let mut new_string1:String = s.push_str(" World1");
@@ -23,5 +23,3 @@ fn main() {
 //     return new_string2;
 //     // dropping the borrowed reference of the local variable s
 // }
-
-
