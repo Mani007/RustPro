@@ -5,5 +5,5 @@ fn main() {
     println!("The lenght of string {} is {}",s1, strlen);
 }
 fn calculate_len(s:&String) -> usize{
-    return (*s).len();  // auto dereferencing happeing here
+    return (*s).len();  // mannual dereferencing happeing here
 }
