@@ -1,10 +1,9 @@
 // Understanding Ownership in Rust
 fn main() {
-    let mut x:u8 = 7;
-    x=x+1;
-    let mut y = &mut x; // y is referencing to value of x. Don't read it like C/C++ as y is refering to address of x as here its refereing to value of x by auto dereferencing operator. 
-    *y=*y+1;  // dereferencing 
-    println!("The value of y ref to x is now {}", y); // custom derefereencing here and through mutablity error
-    println!("The value of x is now {}", x);
-
+    let s1:String = String::from("HeLLo");
+    let strlen:usize = calculate_len(&s1);
+    println!("The lenght of string {} is {}",s1, strlen);
+}
+fn calculate_len(s:&String) -> usize{
+    return s.len();  // auto dereferencing happeing here
 }
