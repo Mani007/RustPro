@@ -1,5 +1,5 @@
 # A to Z of Rust
-This is a collection of resources for learning the Rust programming language. 
+This is a collection of resources for learning the Rust programming language. ![Rust programming language references](https://doc.rust-lang.org/reference/introduction.html)
 #### For windows users you need VC++ linker, please install rust from official website.
 #### Debugging rust programe is critical skill as it is a system level programming language. So make sure you debugging skill is great. 
 #### for debugging you need to install VS code plugin rust-analyzer, codeLLDB and microsoft C++. Also other register level debugger would be a great choice. Make sure you allow breakpoint everywhere in your VS code settings. 
@@ -153,7 +153,8 @@ fn main() {
 ```
 Referencing is similar to the concept of pointers in C/C++ but not completely the same, please do not mix it up. In rust pointer and references are two completely different concepts.   
 ### Difference between reference and pointers in rust
-Reference is a wraper around memory address. Unlike pointer which directly hold the memory address, reference holds metadata such as lifetime, mutablity etc along with address of the varable it is pointing. Reference behave similar to pointer, but have additional safety check provided by rust compiler. This is essentiall essence of rust memory safety. Also here rules of ownership, borrow and other benificial memory safety is applied in reference. Rust do have smart pointers, but thats different from concept of reference in rust. ![Check this video for more details](https://www.youtube.com/watch?v=Jcbh07P0jHU)
+Reference is a wraper around memory address. Unlike pointer which directly hold the memory address, reference holds metadata such as lifetime, mutablity etc along with address of the varable it is pointing. Reference behave similar to pointer, but have additional safety check provided by rust compiler. This is essentiall essence of rust memory safety. Also here rules of ownership, borrow and other benificial memory safety is applied in reference. Rust do have smart pointers, but thats different from concept of reference in rust. ![Check this video for more details](https://www.youtube.com/watch?v=Jcbh07P0jHU).    
+![Rust pointer types](https://doc.rust-lang.org/reference/types/pointer.html)
 
 ### Control Flow Statements in Rust
 ## Books and Resources(more updates coming soon):
