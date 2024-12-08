@@ -136,7 +136,12 @@ Here we have demonstrated basic functionality offered by clone method belonging 
 Note that despite factually being able to distinguish between distinct identities manifested physically represented visually via graphical interface presented interactively displayed visually appealing manner nonetheless technically speaking those differences remain superficial reflecting mere surface level distinctions rather than profound structural variations inherent underneath hidden layers concealing intricate details governing inner workings encapsulated securely beneath opaque veil shielding curious minds yearning unconditionally seeking truth about nature of reality itself.      
 #### Rules and regulations of passing ownership in Rust
 1. When you borrow for reading the volue operations, its allowed easily.      
-2. You cannot borrow twice a same mutable varible in a program, it leads to borrowing twice error. This error is important because mutable varible with more than one mutable borrowing will lead to race-around conditions. Hence its not allowed in rust and often lead to `second mutable borrowing error`.  
+2. You cannot borrow twice a same mutable varible in a program, it leads to borrowing twice error. This error is important because mutable varible with more than one mutable borrowing will lead to race-around conditions. Hence its not allowed in rust and often lead to `second mutable borrowing error`.    
+3. As long as your data is getting read its not an issue, but the moment when multiple people will try to write on your same piece of data, this will create a problem called race-around condition.    
+#### Reference rule of rust
+- At any given time, you can have either one mutable reference or any number of immutable references.
+- References must always be valid.
+
 
 ### Control Flow Statements in Rust
 ## Books and Resources(more updates coming soon):
