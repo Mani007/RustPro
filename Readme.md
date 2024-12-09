@@ -9,7 +9,7 @@ This is a collection of resources for learning the Rust programming language. ![
 ![Expert debugging video for rust2 memory layout](https://www.youtube.com/watch?v=7_o-YRxf_cc)
 ### Datatypes in Rust
 Two major data types of rust are scaler types and compund types
-1. Scaler types - such as interger float etc.    
+1. Scaler types - such as integer(i32 or u32 etc.), float(f32 or f64), bool(true/false), char etc.    
 2. Compond types - such as premitive - arrays and tuples and complex - Strings, vectors etc. 
 
 ### Functions in Rust
