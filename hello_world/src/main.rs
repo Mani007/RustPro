@@ -10,4 +10,5 @@ fn main() {
     println!("The value of element 0 is {}",d[0]);
     let e = ["Hello","World"]; // String array
     println!("The value of element 0 is {}",e[0]);
+    println!("The length of array d is {}",d.len());
 }
