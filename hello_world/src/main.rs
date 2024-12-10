@@ -9,3 +9,4 @@ fn write_arr_ref( temp_arr:&mut [&str;3]) {  // We are taking reference of an ar
     temp_arr[0] = "foolleo";
     println!(" temp_arr is {:?}",temp_arr);
 }
+// PLEASE GO THROUGH THE ARRAY PASSING BY VALUE AND PASSING BY REFERENCE THOROUGHLY
