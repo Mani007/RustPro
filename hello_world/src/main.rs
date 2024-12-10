@@ -5,7 +5,7 @@ fn main() {
     println!("The array elements are: {:?}",strarr);  // make sure to use the format specifier of{:?} for printing arrays.
 }
 // The function does not lead to same result as new clone of array is getting created inside the function.
-fn write_arr(mut temp_arr:[&str;3]) {
+fn write_arr(mut temp_arr:[&str;3]) {  // new copy of strarr is created with name as temp_arr
     temp_arr[0] = "foolleo";
     println!(" temp_arr is {:?}",temp_arr);
 }
