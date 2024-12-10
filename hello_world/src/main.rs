@@ -9,3 +9,4 @@ fn write_arr(mut temp_arr:[&str;3]) {  // new copy of strarr is created with nam
     temp_arr[0] = "foolleo";
     println!(" temp_arr is {:?}",temp_arr);
 }
+// passing array by value is memory inefficient way of passing array to function. 
