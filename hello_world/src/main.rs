@@ -4,7 +4,7 @@ fn main() {
    let  vrr:Vec<&str> = vec!["abc", "def", "ghi"];   // vrr is the current owner of the vector
 
    write_vrr( vrr);  // vrr ownership is transfered to the function
-   println!("Strings in the vector is : {:?}",vrr);
+   //println!("Strings in the vector is : {:?}",vrr); // This will give error as vrr no longer owns the vector vrr
 
 }
 fn write_vrr(in_vrr:  Vec<&str>) {   // in_vrr becomes the new owner of the vector
