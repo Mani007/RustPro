@@ -7,13 +7,14 @@ fn main() {
    println!("Strings in the vector is : {:?}",vrr);
 
 }
-fn write_vrr(vrr:  Vec<&str>) {
+fn write_vrr(in_vrr:  Vec<&str>) {   // in_vrr becomes the new owner of the vector
+
     println!("Writing to the vector");
-    vrr.push("jkl");
-    vrr.push("mno");
-    vrr.push("pqr");
+    in_vrr.push("jkl");
+    in_vrr.push("mno");
+    in_vrr.push("pqr");
 
     // Reading the elements of a vector
-    println!("Reading and printing strings from the vector : {:?}",vrr);
+    println!("Reading and printing strings from the vector : {:?}",in_vrr);
     
 }
