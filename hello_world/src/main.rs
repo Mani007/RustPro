@@ -1,13 +1,13 @@
 // Understanding Vectors in Rust
 // Please note that unlike arrays vector is an heap allocated datatype. 
 fn main() {
-   let mut vrr:Vec<&str> = vec!["abc", "def", "ghi"];
+   let  vrr:Vec<&str> = vec!["abc", "def", "ghi"];   // vrr is the current owner of the vector
 
-   write_vrr(&mut vrr);
+   write_vrr( vrr);
    println!("Strings in the vector is : {:?}",vrr);
 
 }
-fn write_vrr(vrr: &mut Vec<&str>) {
+fn write_vrr(vrr:  Vec<&str>) {
     println!("Writing to the vector");
     vrr.push("jkl");
     vrr.push("mno");
