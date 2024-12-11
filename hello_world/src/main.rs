@@ -1,13 +1,7 @@
 // Understanding Vectors in Rust
 fn main() {
    //let mut v:Vec<i32> = Vec::new(); // Vector declaration in rust 
-   let mut v = Vec::<i32>::new();  // Vector declaration in rust
-
-   v.push(6); // Pushing element to vector
-   v.push(5); // Pushing element to vector
-   v.push(4); // Pushing element to vector
-   v.push(3); // Pushing element to vector
-   v.push(2); // Pushing element to vector
+   let v = vec![1,2,3,4,5]; // Another way to declare vector in rust
    println!("Vector is  : {:?}",v);
    
 }
