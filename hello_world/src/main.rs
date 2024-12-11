@@ -3,7 +3,7 @@
 fn main() {
    let  vrr:Vec<&str> = vec!["abc", "def", "ghi"];   // vrr is the current owner of the vector
 
-   write_vrr( vrr);
+   write_vrr( vrr);  // vrr ownership is transfered to the function
    println!("Strings in the vector is : {:?}",vrr);
 
 }
