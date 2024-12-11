@@ -8,7 +8,6 @@ fn main() {
 
 }
 fn read_vrr(vrr: Vec<&str>) {
-    for i in 0..3{
-        println!("{}",vrr[i]);
-    }
+    println!("Reading and printing strings from the vector : {:?}",vrr);
+    
 }
