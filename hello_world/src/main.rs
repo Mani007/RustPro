@@ -4,5 +4,11 @@ fn main() {
    let vrr:Vec<&str> = vec!["abc", "def", "ghi"];
 
    println!("Strings in the vector is : {:?}",vrr);
+   read_vrr(vrr);
 
+}
+fn read_vrr(vrr: Vec<&str>) {
+    for i in 0..3{
+        println!("{}",vrr[i]);
+    }
 }
