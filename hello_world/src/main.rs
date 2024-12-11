@@ -1,10 +1,13 @@
-// Understanding Arrays in Rust
+// Understanding Vectors in Rust
 fn main() {
-    let  strarr:[&str;3] = ["Hello","World","Hi!"];  // Array is created with directly passing the values of type str and length as 3.
-    read_arr_ref(&strarr);  // passing array to a function by reference. 
-    println!("The array elements are: {:?}",strarr);  // make sure to use the format specifier of{:?} for printing arrays.
+   let mut v:Vec<i32> = Vec::new(); // Vector declaration in rust 
+   v.push(5); // Pushing element to vector
+   v.push(4); // Pushing element to vector
+   v.push(3); // Pushing element to vector
+   v.push(2); // Pushing element to vector
+   println!("Vector is element at zero index : {}",v[0]);
+   println!("Vector is element at one index : {}",v[1]);
+   println!("Vector is element at two index : {}",v[2]);
+   println!("Vector is element at three index : {}",v[3]);
+
 }
-fn read_arr_ref(temp_arr:&[&str;3]) {
-    println!("The array elements are: {:?}",temp_arr);  // directly accessing elements of array using reference.
-}
-// Reading array with reference hence no mut keyword is been used
