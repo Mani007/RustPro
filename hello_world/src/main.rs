@@ -14,6 +14,6 @@ fn main() {
         8 => println!("Eight"),
         9 => println!("Nine"),
         10 => println!("Ten"),
-        _ => println!("Something else")
+        _ => println!("Something else")  // default case
     }
 }
