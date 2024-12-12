@@ -1,13 +1,11 @@
-// Understanding Shadowing in Rust
+// Understanding Control Flow in Rust
 
 fn main() {
-    let x = 30;
-    println!("x is currently as {}", x);
-    let x = "hi";
-    println!("x is  here as {}", x);
-    x = "hi"; // now this is not allowed in Rust 
-   
-    
-
-
+let my_num = 12;
+if my_num % 3 == 0 && my_num % 4 == 0{
+    println!("my number is divisible by both 3 and 4");
+} else if my_num % 3 == 0 || my_num % 4 == 0 {
+println!("My number is divisible by either three or four, but not both.");
+}else{
+    println!("My number is not divisible by neither three nor four.");}
 }
