@@ -5,7 +5,15 @@ fn main() {
 
     match my_num {
         1 => println!("One"),
-        2 | 3 | 5 | 7 | 11 => println!("This is a prime number"), // This will print if the value of my_num matches any of these values.
-        _ => println!("Not special") // This will be printed for all other cases.
+        2=> println!("Two"),
+        3 => println!("Three"),
+        4 => println!("Four"),
+        5 => println!("Five"),
+        6 => println!("Six"),
+        7 => println!("Seven"),
+        8 => println!("Eight"),
+        9 => println!("Nine"),
+        10 => println!("Ten"),
+        _ => println!("Something else")
     }
 }
