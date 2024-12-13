@@ -4,10 +4,7 @@ fn main() {
     let my_num = 7;
 
     fn is_even(num: u8) -> bool {
-        if num % 2 == 0 {
-            return true;
-        }
-        return false;
+       return num%2 == 0;
     }
 
     // using match statement
