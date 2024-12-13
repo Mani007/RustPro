@@ -2,11 +2,6 @@
 
 fn main() {
     let my_num = 7;
-
-    fn is_even(num: u8) -> bool {
-       return num%2 == 0;
-    }
-
     // using match statement
     match my_num {
         x if is_even(x) => println!("Even"),
@@ -15,3 +10,7 @@ fn main() {
     }
 
 }
+
+fn is_even(num: u8) -> bool {
+    return num%2 == 0;
+ }
